@@ -54,6 +54,11 @@
                     <field name="LIGHT">BLUE</field>
                   </block>
                 </value>
+                <value name="B">
+                  <block type="math_number" id="467">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
               </block>
             </value>
             <statement name="DO0">
