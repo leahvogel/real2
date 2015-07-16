@@ -117,7 +117,17 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="movement_forward" id="31"></block>
+                                                  <block type="movement_forward" id="31">
+                                                    <next>
+                                                      <block type="robot_delay" id="51" inline="true">
+                                                        <value name="DELAY">
+                                                          <block type="math_number" id="66">
+                                                            <field name="NUM">600</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
                                                 </next>
                                               </block>
                                             </next>
@@ -169,7 +179,17 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="movement_forward" id="43"></block>
+                                                  <block type="movement_forward" id="43">
+                                                    <next>
+                                                      <block type="robot_delay" id="53" inline="true">
+                                                        <value name="DELAY">
+                                                          <block type="math_number" id="73">
+                                                            <field name="NUM">600</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
                                                 </next>
                                               </block>
                                             </next>
