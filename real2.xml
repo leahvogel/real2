@@ -1,1 +1,67 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="movement_forward" id="120" x="39" y="79">
+    <next>
+      <block type="controls_whileUntil" id="7" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="logic_operation" id="20" inline="true">
+            <field name="OP">LAND</field>
+            <value name="A">
+              <block type="logic_compare" id="27" inline="true">
+                <field name="OP">GT</field>
+                <value name="A">
+                  <block type="sensor_spectrometer" id="61">
+                    <field name="LIGHT">BLUE</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="90">
+                    <field name="NUM">95</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_operation" id="40" inline="true">
+                <field name="OP">LAND</field>
+                <value name="A">
+                  <block type="logic_compare" id="47" inline="true">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="sensor_spectrometer" id="76">
+                        <field name="LIGHT">RED</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="103">
+                        <field name="NUM">80</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_compare" id="54" inline="true">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="sensor_spectrometer" id="83">
+                        <field name="LIGHT">YELLOW</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="110">
+                        <field name="NUM">40</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_stop" id="130"></block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>
