@@ -210,7 +210,7 @@
               </block>
             </statement>
             <next>
-              <block type="movement_stop" id="48">
+              <block type="movement_stutter" id="62">
                 <next>
                   <block type="oled_setcursor" id="49" inline="true">
                     <value name="STARTX">
