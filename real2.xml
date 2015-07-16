@@ -12,7 +12,7 @@
           <block type="robot_delay" id="146" inline="true">
             <value name="DELAY">
               <block type="math_number" id="153">
-                <field name="NUM">60000</field>
+                <field name="NUM">5000</field>
               </block>
             </value>
             <next>
@@ -30,7 +30,7 @@
                           <block type="robot_delay" id="183" inline="true">
                             <value name="DELAY">
                               <block type="math_number" id="293">
-                                <field name="NUM">6000</field>
+                                <field name="NUM">5000</field>
                               </block>
                             </value>
                             <next>
@@ -48,7 +48,7 @@
                                           <block type="robot_delay" id="207" inline="true">
                                             <value name="DELAY">
                                               <block type="math_number" id="300">
-                                                <field name="NUM">60000</field>
+                                                <field name="NUM">5000</field>
                                               </block>
                                             </value>
                                             <next>
@@ -66,7 +66,7 @@
                                                           <block type="robot_delay" id="251" inline="true">
                                                             <value name="DELAY">
                                                               <block type="math_number" id="327">
-                                                                <field name="NUM">12000</field>
+                                                                <field name="NUM">5000</field>
                                                               </block>
                                                             </value>
                                                             <next>
