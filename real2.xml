@@ -8,7 +8,6 @@
     </value>
     <statement name="DO">
       <block type="controls_if" id="238" inline="false">
-        <mutation else="1"></mutation>
         <value name="IF0">
           <block type="logic_operation" id="5" inline="true">
             <field name="OP">LAND</field>
@@ -47,7 +46,7 @@
         <statement name="DO0">
           <block type="movement_stop" id="16"></block>
         </statement>
-        <statement name="ELSE">
+        <next>
           <block type="movement_forward" id="1">
             <next>
               <block type="robot_delay" id="27" inline="true">
@@ -150,8 +149,9 @@
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
     </statement>
   </block>
+  <block type="controls_if" id="266" inline="false" x="297" y="203"></block>
 </xml>
