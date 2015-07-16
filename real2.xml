@@ -116,6 +116,9 @@
                                                     <field name="NUM">1</field>
                                                   </block>
                                                 </value>
+                                                <next>
+                                                  <block type="movement_forward" id="64"></block>
+                                                </next>
                                               </block>
                                             </next>
                                           </block>
@@ -165,6 +168,9 @@
                                                     <field name="NUM">0</field>
                                                   </block>
                                                 </value>
+                                                <next>
+                                                  <block type="movement_forward" id="74"></block>
+                                                </next>
                                               </block>
                                             </next>
                                           </block>
