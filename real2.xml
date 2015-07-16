@@ -1,9 +1,8 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="120" x="39" y="79">
+  <block type="movement_forward" id="120" x="73" y="30">
     <next>
-      <block type="controls_whileUntil" id="7" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
+      <block type="controls_if" id="137" inline="false">
+        <value name="IF0">
           <block type="logic_operation" id="20" inline="true">
             <field name="OP">LAND</field>
             <value name="A">
@@ -58,7 +57,7 @@
             </value>
           </block>
         </value>
-        <statement name="DO">
+        <statement name="DO0">
           <block type="movement_stop" id="130"></block>
         </statement>
       </block>
