@@ -1,138 +1,180 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="1" x="60" y="9">
-    <next>
-      <block type="controls_whileUntil" id="30" inline="false">
-        <field name="MODE">WHILE</field>
-        <value name="NUMBER">
-          <block type="math_number" id="43">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="controls_if" id="2" inline="false">
-            <value name="IF0">
-              <block type="logic_operation" id="3" inline="true">
-                <field name="OP">LAND</field>
-                <value name="A">
-                  <block type="logic_compare" id="4" inline="true">
-                    <field name="OP">GT</field>
-                    <value name="A">
-                      <block type="sensor_spectrometer" id="5">
-                        <field name="LIGHT">BLUE</field>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="math_number" id="6">
-                        <field name="NUM">95</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="logic_operation" id="7" inline="true">
-                    <field name="OP">LAND</field>
-                    <value name="A">
-                      <block type="logic_compare" id="8" inline="true">
-                        <field name="OP">LT</field>
-                        <value name="A">
-                          <block type="sensor_spectrometer" id="9">
-                            <field name="LIGHT">RED</field>
-                          </block>
-                        </value>
-                        <value name="B">
-                          <block type="math_number" id="10">
-                            <field name="NUM">80</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="logic_compare" id="11" inline="true">
-                        <field name="OP">LT</field>
-                        <value name="A">
-                          <block type="sensor_spectrometer" id="12">
-                            <field name="LIGHT">YELLOW</field>
-                          </block>
-                        </value>
-                        <value name="B">
-                          <block type="math_number" id="13">
-                            <field name="NUM">40</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
+  <block type="controls_whileUntil" id="267" inline="false" x="79" y="27">
+    <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="math_number" id="274">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="1">
+        <next>
+          <block type="robot_delay" id="146" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="153">
+                <field name="NUM">60000</field>
               </block>
             </value>
-            <statement name="DO0">
-              <block type="movement_stop" id="14"></block>
-            </statement>
             <next>
-              <block type="controls_if" id="57" inline="false">
-                <value name="IF0">
-                  <block type="logic_operation" id="64" inline="true">
-                    <field name="OP">LAND</field>
-                    <value name="A">
-                      <block type="logic_compare" id="78" inline="true">
-                        <field name="OP">LT</field>
-                        <value name="A">
-                          <block type="sensor_spectrometer" id="99">
-                            <field name="LIGHT">BLUE</field>
-                          </block>
-                        </value>
-                        <value name="B">
-                          <block type="math_number" id="120">
-                            <field name="NUM">40</field>
-                          </block>
-                        </value>
+              <block type="movement_right" id="144">
+                <next>
+                  <block type="robot_delay" id="164" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="171">
+                        <field name="NUM">1400</field>
                       </block>
                     </value>
-                    <value name="B">
-                      <block type="logic_operation" id="71" inline="true">
-                        <field name="OP">LAND</field>
-                        <value name="A">
-                          <block type="logic_compare" id="85" inline="true">
-                            <field name="OP">LT</field>
-                            <value name="A">
-                              <block type="sensor_spectrometer" id="106">
-                                <field name="LIGHT">RED</field>
+                    <next>
+                      <block type="movement_forward" id="181">
+                        <next>
+                          <block type="robot_delay" id="183" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="293">
+                                <field name="NUM">6000</field>
                               </block>
                             </value>
-                            <value name="B">
-                              <block type="math_number" id="127">
-                                <field name="NUM">60</field>
+                            <next>
+                              <block type="movement_right" id="193">
+                                <next>
+                                  <block type="robot_delay" id="205" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="313">
+                                        <field name="NUM">1400</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="movement_forward" id="203">
+                                        <next>
+                                          <block type="robot_delay" id="207" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="300">
+                                                <field name="NUM">60000</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="movement_left" id="218">
+                                                <next>
+                                                  <block type="robot_delay" id="220" inline="true">
+                                                    <value name="DELAY">
+                                                      <block type="math_number" id="320">
+                                                        <field name="NUM">1400</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="movement_forward" id="240">
+                                                        <next>
+                                                          <block type="robot_delay" id="251" inline="true">
+                                                            <value name="DELAY">
+                                                              <block type="math_number" id="327">
+                                                                <field name="NUM">12000</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="movement_left" id="230">
+                                                                <next>
+                                                                  <block type="robot_delay" id="276" inline="true">
+                                                                    <value name="DELAY">
+                                                                      <block type="math_number" id="334">
+                                                                        <field name="NUM">1400</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="movement_forward" id="286">
+                                                                        <next>
+                                                                          <block type="controls_if" id="2" inline="false">
+                                                                            <value name="IF0">
+                                                                              <block type="logic_operation" id="3" inline="true">
+                                                                                <field name="OP">LAND</field>
+                                                                                <value name="A">
+                                                                                  <block type="logic_compare" id="4" inline="true">
+                                                                                    <field name="OP">GT</field>
+                                                                                    <value name="A">
+                                                                                      <block type="sensor_spectrometer" id="5">
+                                                                                        <field name="LIGHT">BLUE</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="B">
+                                                                                      <block type="math_number" id="6">
+                                                                                        <field name="NUM">95</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="logic_operation" id="7" inline="true">
+                                                                                    <field name="OP">LAND</field>
+                                                                                    <value name="A">
+                                                                                      <block type="logic_compare" id="8" inline="true">
+                                                                                        <field name="OP">LT</field>
+                                                                                        <value name="A">
+                                                                                          <block type="sensor_spectrometer" id="9">
+                                                                                            <field name="LIGHT">RED</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="B">
+                                                                                          <block type="math_number" id="10">
+                                                                                            <field name="NUM">80</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="B">
+                                                                                      <block type="logic_compare" id="11" inline="true">
+                                                                                        <field name="OP">LT</field>
+                                                                                        <value name="A">
+                                                                                          <block type="sensor_spectrometer" id="12">
+                                                                                            <field name="LIGHT">YELLOW</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="B">
+                                                                                          <block type="math_number" id="13">
+                                                                                            <field name="NUM">40</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO0">
+                                                                              <block type="movement_stop" id="14"></block>
+                                                                            </statement>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
                               </block>
-                            </value>
+                            </next>
                           </block>
-                        </value>
-                        <value name="B">
-                          <block type="logic_compare" id="92" inline="true">
-                            <field name="OP">LT</field>
-                            <value name="A">
-                              <block type="sensor_spectrometer" id="113">
-                                <field name="LIGHT">GREEN</field>
-                              </block>
-                            </value>
-                            <value name="B">
-                              <block type="math_number" id="134">
-                                <field name="NUM">30</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
+                        </next>
                       </block>
-                    </value>
+                    </next>
                   </block>
-                </value>
-                <statement name="DO0">
-                  <block type="movement_right" id="144"></block>
-                </statement>
+                </next>
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
