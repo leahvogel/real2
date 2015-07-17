@@ -210,38 +210,38 @@
               </block>
             </statement>
             <next>
-              <block type="oled_setcursor" id="49" inline="true">
+              <block type="oled_setcursor" id="48" inline="true">
                 <value name="STARTX">
-                  <block type="math_number" id="50">
+                  <block type="math_number" id="49">
                     <field name="NUM">10</field>
                   </block>
                 </value>
                 <value name="STARTY">
-                  <block type="math_number" id="51">
+                  <block type="math_number" id="50">
                     <field name="NUM">10</field>
                   </block>
                 </value>
                 <next>
-                  <block type="oled_drawtext" id="52">
+                  <block type="oled_drawtext" id="51">
                     <field name="TEXT">I found water!</field>
                     <next>
-                      <block type="movement_stutter" id="48">
+                      <block type="movement_stutter" id="52">
                         <next>
-                          <block type="robot_delay" id="54" inline="true">
+                          <block type="robot_delay" id="53" inline="true">
                             <value name="DELAY">
-                              <block type="math_number" id="62">
+                              <block type="math_number" id="54">
                                 <field name="NUM">300</field>
                               </block>
                             </value>
                             <next>
-                              <block type="movement_setmotors" id="134" inline="true">
+                              <block type="movement_setmotors" id="55" inline="true">
                                 <value name="BOTHMOVLEFT">
-                                  <block type="math_number" id="141">
+                                  <block type="math_number" id="56">
                                     <field name="NUM">100</field>
                                   </block>
                                 </value>
                                 <value name="BOTHMOVRIGHT">
-                                  <block type="math_number" id="151">
+                                  <block type="math_number" id="57">
                                     <field name="NUM">30</field>
                                   </block>
                                 </value>
